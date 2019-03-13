@@ -10,14 +10,27 @@
  license agreement you entered into with SAP.
 --><extensioninfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extensioninfo.xsd">
 
-   <extension abstractclassprefix="Generated" classprefix="Cuppytrail" managername="CuppytrailManager" managersuperclass="de.hybris.platform.jalo.extension.Extension" name="cuppytrail" usemaven="false">
+
+
+   <extension
+           name="cuppytrail"
+           abstractclassprefix="Generated"
+           classprefix="Cuppytrail"
+           managername="CuppytrailManager"
+           managersuperclass="de.hybris.platform.jalo.extension.Extension"
+           usemaven="false">
       <!-- for more information on maven managed libraries please consult https://wiki.hybris.com/x/Nq8sDQ -->
                
       <!-- you should add all required extensions to this list, except platform extensions which are automatically required -->         
-      <!-- <requires-extension name="cms"/> -->         
-      
+      <!-- <requires-extension name="cms"/> -->
 
-      <coremodule generated="true" manager="de.hybris.platform.cuppytrail.jalo.CuppytrailManager" packageroot="de.hybris.platform.cuppytrail"/>
+      <requires-extension name="cuppy"/>
+
+      <coremodule
+              generated="true"
+              manager="de.hybris.platform.cuppytrail.jalo.CuppytrailManager"
+              packageroot="de.hybris.platform.cuppytrail"
+      />
 
       <!-- <webmodule jspcompile="false" webroot="/cuppytrail"/> -->
 					
