@@ -121,6 +121,7 @@
 
 <extension name="cuppytrail" />
 
+<extension name="cuppytrailhmc" />
 
 
 	</extensions>
